@@ -13,7 +13,7 @@ export default function Fullname() {
   return (
     <div style={{margin: "10px"}}>
       <h1>Full Name Display</h1>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <p>
           First Name:
           <input
