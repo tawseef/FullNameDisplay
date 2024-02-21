@@ -14,7 +14,6 @@ export default function Fullname() {
     <div style={{margin: "10px"}}>
       <h1>Full Name Display</h1>
       <form onSubmit={(e) => e.preventDefault()}>
-        <p>
           First Name:
           <input
             type="text"
@@ -22,16 +21,14 @@ export default function Fullname() {
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
-        </p>
-        <p>
+        <br />
           Last Name:
           <input
             type="text"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
-          />
-        </p>
+          /><br />
         <button  onSubmit={(e)=>e.preventDefault()} onClick={handleClick}> 
           Submit
         </button>
