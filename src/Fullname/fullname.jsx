@@ -32,7 +32,9 @@ export default function Fullname() {
             required
           />
         </p>
-        <input type="submit" onClick={handleClick}></input>
+        <button  onSubmit={(e)=>e.preventDefault()} onClick={handleClick}> 
+          Submit
+        </button>
       </form>
       <h3>{fullName ? "Full Name: " + fullName : false}</h3>
     </div>
