@@ -29,7 +29,8 @@ export default function Fullname() {
             onChange={(e) => setLastName(e.target.value)}
             required
           /><br />
-        <button  onSubmit={(e)=>e.preventDefault()} onClick={handleClick}> 
+        {/* <button  onSubmit={(e)=>e.preventDefault()} onClick={handleClick}>  */}
+        <button  type="Submit" onClick={handleClick}> 
           Submit
         </button>
       </form>
