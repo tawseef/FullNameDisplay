@@ -34,7 +34,7 @@ export default function Fullname() {
           Submit
         </button>
       </form>
-      {fullName ? "Full Name: "+fullName:false}
+      {fullName ? <div>"Full Name: "{fullName}</div>:false}
     </div>
   );
 }
